@@ -5,7 +5,7 @@ using namespace std;
 
 template <class Comparable>
 Comparable max_sub_sum(const vector<Comparable> &v) {
-	int this_sum = 0, max_sum = 0;
+	Comparable this_sum = 0, max_sum = 0;
 	for(unsigned i = 0; i < v.size(); i++){
 		this_sum += v.at(i);
 		if(this_sum > max_sum)
