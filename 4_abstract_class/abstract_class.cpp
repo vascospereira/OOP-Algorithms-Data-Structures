@@ -2,7 +2,6 @@
 #include <iostream>
 using namespace std;
 
-
 class Polygon {
   protected:
     int width, height;
@@ -36,12 +35,9 @@ class Triangle: public Polygon, public Output {
 };
 
 int main () {
-
 	Polygon *poly1 = new Rectangle(3,4);
 	Polygon *poly2 = new Triangle(5,6);
 	Rectangle::print(poly1->area());
 	Triangle::print(poly2->area());
-
 	return 0;
-
 }
